@@ -20,6 +20,7 @@ import java.math.BigInteger;
 /**
  *
  * @author Abdel
+ * @author javi
  */
 @Entity
 @Table(name = "user")
