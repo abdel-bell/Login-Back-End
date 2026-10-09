@@ -22,6 +22,8 @@ import java.util.List;
 /**
  *
  * @author E. Jamil
+ * @author Abdel
+ * @author javi
  */
 @Stateless
 @Path("entities.user")

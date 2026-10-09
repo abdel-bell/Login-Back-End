@@ -9,6 +9,8 @@ import java.util.Set;
 /**
  *
  * @author E. Jamil
+ * @author Abdel
+ * @author javi
  */
 @jakarta.ws.rs.ApplicationPath("webresources")
 public class ApplicationConfig extends jakarta.ws.rs.core.Application {

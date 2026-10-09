@@ -10,6 +10,8 @@ import java.util.List;
 /**
  *
  * @author E. Jamil
+ * @author Abdel
+ * @author javi
  */
 public abstract class AbstractFacade<T> {
 
