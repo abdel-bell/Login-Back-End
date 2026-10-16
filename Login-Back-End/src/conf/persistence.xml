@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="3.2" xmlns="https://jakarta.ee/xml/ns/persistence" 
-             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd">
-  <persistence-unit name="Login-Back-EndPU" transaction-type="JTA">
+<persistence version="3.2"
+    xmlns="https://jakarta.ee/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd">
+
+    <persistence-unit name="Login-Back-EndPU" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>jdbc/__mysql</jta-data-source>
         <properties>
@@ -28,6 +30,8 @@
             <!-- DB Catalog and Action -->
             <property name="hibernate.default_catalog" value="signdb"/>
             <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+            <!-- Forzar el envío de datos antes de terminar la transacción -->
+            <property name="jakarta.persistence.flush-mode" value="AUTO"/>
         </properties>
 </persistence-unit>
 </persistence>
